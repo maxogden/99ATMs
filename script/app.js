@@ -285,7 +285,7 @@ var MobileViewer = {};
 //Go go go go go!!
 var app, config;
 $('#map-page').live('pagecreate',function(event){
-    var config = {brought_to_you_by: "The Internet", city_name: "Bay Area"};
+    var config = {brought_to_you_by: "The Internet", city_name: "Bay Area/PDX"};
     $('#city_name').text(config.city_name);
     $('#brought_to_you_by').text(config.brought_to_you_by);
     app = app || MobileViewer.App();

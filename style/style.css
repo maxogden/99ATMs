@@ -67,7 +67,7 @@ td { vertical-align: top; }
    ========================================================================== */
 
 html {
-    background: #BBB;
+    background: #F1FFFD;
 }
 
 a:link, a:visited {
@@ -85,8 +85,8 @@ a:hover {
     -webkit-border-radius: 7px; 
     border-radius: 7px; 
     -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
-    border: 2px solid #154A07;
-    background: #999;
+    border: 1px solid #000;
+    background: #EBF9F7;
 }
 
 #container h1 {
