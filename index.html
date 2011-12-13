@@ -14,9 +14,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
   <!-- CSS concatenated and minified via ant build script-->
+  <link rel="stylesheet" href="style/bootstrap.min.css">
   <link rel="stylesheet" href="style/style.css">
-  
-  <link href='http://fonts.googleapis.com/css?family=Lemon' rel='stylesheet' type='text/css'>
   <!-- end CSS-->
   <script type="text/javascript">// <![CDATA[  
       var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));  
@@ -31,18 +30,51 @@
 </head>
 
 <body>
-  <div id="container">
-    <header>
-        <img src="images/banklogo.png">
-        <h1>I've got 99 ATMs</h1>
-        <h2>...those with fees ain't one.</h2>
-    </header>
-    <div id="main" role="main">
-        Looking for an ATM in the Bay Area or PDX? Click here for the <a href="./mobile.html">mobile app</a> or visit this page on a mobile device to get redirected automatically. You can also see all of our data on <a href="http://8ea4399003e5984c114ae49864d57a18.rectangl.es/#5.85/42.829/-119.530">one big map</a>.
+
+  <div id="main" role="main" class="container hero-unit">
+    
+      <div class="row">
+        <img src="images/atm-angel.png" class="span4" id="atm"></img>
+
+        <div id="slogan" class="span8 offset4">
+          <h2>
+            <span class="highlight-red">99ATMs </span>is a service that helps you locate
+            <span class="highlight-blue">Community banks</span>, 
+            <span class="highlight-green"> fee-free ATMs</span>, and
+            <span class="highlight-purple">credit unions</span> in your area.
+            <span class="highlight-purple"></span>
+            
+            <br></br>
+            
+            <em>I've got 
+              <span class="highlight-red">99ATMs </span>...those with fees ain't one.
+            </em>
+
+          </h2>
+          
+          <br></br>
+          
+          <a href="http://99atms.com/mobile.html">
+            
+            <button class="btn large primary">
+              <strong>find ATM</strong>
+            </button>
+            
+          </a>
+        </div>
+  
+      </div>  
+  </div>
+
+       
+  <div id="info" class="container hero-unit">
+    <div class="row">
+      <div class="span16">
+        <p>Looking for an ATM in the Bay Area or PDX? Click here for the <a href="./mobile.html">mobile app</a> or visit this page on a mobile device to get redirected automatically. You can also see all of our data on <a href="http://8ea4399003e5984c114ae49864d57a18.rectangl.es/#5.85/42.829/-119.530">one big map</a>.</p>
         <p>This is an free <a href="https://github.com/maxogden/99ATMs">open source</a> and <a href="http://datacouch.com/edit/#/dc8ea4399003e5984c114ae498647e1a34">open data</a> project. If you can get more fee-free or local bank ATM data for your area then upload it to DataCouch to get included in this app!</p>
+      </div> 
     </div>
-    <footer></footer>
-  </div> <!--! end of #container -->
+  </div><!--! end of #container -->
 
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
@@ -51,7 +83,7 @@
 
   <!-- scripts concatenated and minified via ant build script-->
   <script defer src="js/plugins.js"></script>
-  <script defer src="js/script.js"></script>
+  <script defer src="script/canvas-gradient.js"></script>
   <!-- end scripts-->
 
 
