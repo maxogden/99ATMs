@@ -210,7 +210,10 @@ var MobileViewer = {};
     _self.refresh = function(latLng) {
         var ajaxUrl;
         // Figure out the bounding box for the query
-        var f = 0.015;
+
+        // 0.015 degrees = 1 mile
+        var f = 0.045;
+
         latLng = latLng || _lastSearchLatLng || _map.getCenter();
         bbox = {'minx': (latLng.lng()-f),
                 'miny': (latLng.lat()-f),
